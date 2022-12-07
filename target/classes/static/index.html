@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>欢迎来到springboot</h1>
+
+
+<form ACTION="/user" method="get">
+    <input value="get请求user" type="submit">
+</form>
+<form ACTION="/user" method="post">
+    <input value="post请求user" type="submit">
+</form>
+<form ACTION="/user" method="post">
+    <input name="_method" type="hidden" value="delete">
+    <input name="_m" type="hidden" value="delete">
+    <input value="delete请求user" type="submit">
+</form>
+<form ACTION="/user" method="post">
+    <input name="_method" type="hidden" value="put">
+    <input name="_m" type="hidden" value="put">
+    <input value="put请求user" type="submit">
+</form>
+
+<a href="/car/1/lisi?age=18">请求</a>
+
+<a href="/cars/sell;low=22;brand=body,lis">矩阵变量</a>
+
+<a href="/boss/1;age=20/2;age=10">两个变量名都一样的时候</a>
+</body>
+</html>
